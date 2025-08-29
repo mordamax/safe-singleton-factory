@@ -20,6 +20,7 @@ jobs:
       - name: Run nodes
         env:
           RPC: http://localhost:8545
+          NODES_VERSION: "17163658765"
         run: |
           ls -lsa bin
           ./bin/revive-dev-node --dev & ./bin/eth-rpc --dev &
